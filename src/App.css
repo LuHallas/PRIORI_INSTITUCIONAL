@@ -1,0 +1,10 @@
+.app {
+  min-height: 100vh;
+}
+
+.app {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}

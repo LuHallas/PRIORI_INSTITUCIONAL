@@ -1,0 +1,264 @@
+.lojas {
+  padding: 15rem 7%;
+  background: var(--beige-medium);
+}
+
+.lojas-container {
+  max-width: 1900px;
+  margin: auto;
+}
+
+/* Header */
+.lojas-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.lojas-label {
+  font-size: 0.7rem;
+  letter-spacing: 5px;
+  color: var(--brown-medium);
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  margin-top: -1rem;
+  font-weight: 400;
+}
+
+.lojas-header h2 {
+  font-size: 3rem;
+  color: var(--dark-primary);
+  letter-spacing: -2px;
+  font-weight: 300;
+}
+
+/* Grid de 2 Lojas */
+.lojas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.loja-card {
+  background: var(--beige-light);
+  border: 1px solid var(--beige-dark);
+  transition: all 0.6s ease;
+}
+
+.loja-card:hover {
+  border-color: var(--green-medium);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(74, 84, 64, 0.15);
+}
+
+.loja-image {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-medium) 100%);
+  border-bottom: 1px solid var(--beige-dark);
+}
+
+.loja-image-2 {
+  background: linear-gradient(135deg, var(--brown-primary) 0%, var(--brown-medium) 100%);
+}
+
+.loja-content {
+  padding: 3rem;
+}
+
+.loja-content h3 {
+  font-size: 1.5rem;
+  color: var(--dark-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.loja-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+.loja-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gray-medium);
+  line-height: 1.7;
+}
+
+.loja-info-item::before {
+  content: '—';
+  color: var(--green-medium);
+}
+
+.loja-link {
+  color: var(--green-dark);
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s ease, color 0.3s ease;
+  font-weight: 400;
+}
+
+.loja-link:hover {
+  gap: 1rem;
+  color: var(--green-medium);
+}
+
+/* Mapa */
+.loja-mapa {
+  margin: 1rem 0;
+  border: 1px solid var(--beige-dark);
+  overflow: hidden;
+}
+
+.loja-mapa iframe {
+  display: block;
+}
+
+/* Ajuste no botão */
+.loja-link {
+  color: var(--green-dark);
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: gap 0.3s ease, color 0.3s ease;
+  font-weight: 400;
+  margin-top: 0.85rem;
+}
+
+.loja-link:hover {
+  gap: 1rem;
+  color: var(--green-medium);
+}
+
+/* Ajuste nos ícones de info */
+.loja-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--gray-medium);
+  line-height: 1.7;
+}
+
+/* ============= RESPONSIVIDADE LOJAS ============= */
+
+@media (max-width: 1600px) {
+  .lojas {
+    padding: 6rem 6%;
+  }
+  
+  .lojas-container {
+    max-width: 1000px;
+  }
+  
+  .lojas-label {
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+  }
+  
+  .lojas-header h2 {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+  
+  .lojas-grid {
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .loja-image {
+    height: 220px;
+  }
+  
+  .loja-content {
+    padding: 2rem;
+  }
+  
+  .loja-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .loja-info-item {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .loja-mapa iframe {
+    height: 200px;
+  }
+  
+  .loja-link {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .lojas-container {
+    max-width: 900px;
+  }
+  
+  .lojas-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .lojas-grid {
+    max-width: 800px;
+  }
+  
+  .loja-image {
+    height: 200px;
+  }
+  
+  .loja-content h3 {
+    font-size: 1.4rem;
+  }
+  
+  .loja-info-item {
+    font-size: 0.85rem;
+  }
+  
+  .loja-mapa iframe {
+    height: 180px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .lojas-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .lojas {
+    padding: 6rem 5%;
+  }
+  
+  .lojas-header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .lojas-grid {
+    max-width: 100%;
+  }
+  
+  .loja-mapa iframe {
+    height: 200px;
+  }
+}

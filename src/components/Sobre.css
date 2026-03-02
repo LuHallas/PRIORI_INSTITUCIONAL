@@ -1,0 +1,229 @@
+.sobre {
+  padding: 15rem 7%;
+  background: var(--beige-medium);
+}
+
+.sobre-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 10rem;
+  align-items: center;
+}
+
+/* Lado Esquerdo - Imagem */
+.sobre-images {
+  position: relative;
+  height: 700px;
+}
+
+.sobre-image-main {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-medium) 100%);
+  border: 1px solid rgba(74, 84, 64, 0.3);
+}
+
+.sobre-image-overlay {
+  position: absolute;
+  bottom: 50px;
+  right: -50px;
+  width: 350px;
+  height: 250px;
+  background: var(--beige-light);
+  border: 1px solid var(--beige-dark);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobre-stat {
+  margin-bottom: 2rem;
+}
+
+.sobre-stat:last-child {
+  margin-bottom: 0;
+}
+
+.sobre-stat h4 {
+  font-size: 3rem;
+  color: var(--brown-medium);
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+.sobre-stat p {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: var(--gray-medium);
+  text-transform: uppercase;
+}
+
+/* Lado Direito - Texto */
+.sobre-content {
+  padding-left: 2rem;
+}
+
+.sobre-label {
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  color: var(--brown-medium);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.sobre-content h2 {
+  font-size: 4.5rem;
+  line-height: 1.15;
+  color: var(--dark-primary);
+  margin-bottom: 3rem;
+  letter-spacing: -2px;
+}
+
+.sobre-divider {
+  width: 80px;
+  height: 1px;
+  background: var(--green-medium);
+  margin: 3rem 0;
+}
+
+.sobre-content p {
+  font-size: 1.05rem;
+  line-height: 2.1;
+  color: var(--gray-dark);
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.sobre-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============= RESPONSIVIDADE SOBRE ============= */
+
+@media (max-width: 1600px) {
+  .sobre {
+    padding: 6rem 6%;
+  }
+  
+  .sobre-container {
+    gap: 3.5rem;
+    max-width: 1200px;
+  }
+  
+  .sobre-label {
+    font-size: 0.55rem;
+    letter-spacing: 3px;
+    margin-bottom: 1.8rem;
+  }
+  
+  .sobre-content h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  .sobre-divider {
+    width: 55px;
+    margin-bottom: 1.8rem;
+  }
+  
+  .sobre-content p {
+    font-size: 0.85rem;
+    line-height: 1.75;
+    margin-bottom: 1.1rem;
+  }
+  
+  .sobre-images {
+    height: 450px;
+  }
+  
+.sobre-image-overlay {
+  position: absolute;
+  bottom: 40px;
+  right: -40px;
+  width: 300px;
+  height: 200px;  /* ← Aumentei de 240px para 280px */
+  background: var(--beige-light);
+  border: 1px solid rgba(125, 139, 111, 0.2);
+  padding: 2.0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.50rem;
+  z-index: 2;
+}
+
+.sobre-stat {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--brown-primary);
+  margin-bottom: 0.2rem;
+  line-height: 1;
+}
+
+.sobre-stat-label {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gray-medium);
+  font-weight: 300;
+  line-height: 1.4;  /* ← Adicionei line-height */
+}
+
+@media (max-width: 1440px) {
+  .sobre {
+    padding: 5.5rem 6%;
+  }
+  
+  .sobre-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .sobre-images {
+    height: 420px;
+  }
+  
+  .sobre-image-overlay {
+    width: 240px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sobre-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .sobre-images {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px){
+  .sobre {
+    padding: 6rem 5%;
+  }
+  
+  .sobre-content h2 {
+    font-size: 2.5rem;
+  }
+  
+  .sobre-content p {
+    font-size: 0.95rem;
+  }
+  
+  .sobre-images {
+    height: 500px;
+  }
+  
+  .sobre-image-overlay {
+    width: 280px;
+    height: 200px;
+    right: -30px;
+  }
+  }
+  }
