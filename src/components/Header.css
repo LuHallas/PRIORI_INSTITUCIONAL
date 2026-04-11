@@ -34,7 +34,7 @@
 
 .logo-subtitle {
   font-size: 0.8rem;
-  letter-spacing: 5cap;
+  letter-spacing: 0.5cap;
   font-weight: 400;
   color: var(--green-medium);
 }
