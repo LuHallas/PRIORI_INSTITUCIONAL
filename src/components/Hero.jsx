@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
 import '../components/Hero.css'
+import heroImage from "../assets/images/cozinhas/cozinha-24.jpg"
 
 function Hero() {
+    console.log('heroImage:', heroImage) // 👈 adiciona aqui
+
     return (
         <section className="hero">
             <div className="hero-container">
@@ -27,7 +30,9 @@ function Hero() {
                 {/* Lado Direito - Visual */}
                 <div className="hero-visual">
                     <div className="hero-accent-line"></div>
-                    <div className="hero-main-image"></div>
+                    <div className="hero-main-image">
+                        <img src={heroImage} alt="Ambiente elegante com móveis personalizados" />
+                    </div>
 
                     <div className="hero-floating-card">
                         <h3 className="number">2.000+</h3>

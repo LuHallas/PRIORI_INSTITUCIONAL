@@ -1,4 +1,5 @@
 import './Sobre.css'
+import sobreImage from '../assets/images/fabrica/fabrica-01.jpg'
 
 function Sobre() {
   return (
@@ -7,7 +8,9 @@ function Sobre() {
         
         {/* Lado Esquerdo - Imagem */}
         <div className="sobre-images">
-          <div className="sobre-image-main"></div>
+          <div className="sobre-image-main">
+            <img src={sobreImage} alt="Fábrica Priori Design Mobili" />
+          </div>
           
           <div className="sobre-image-overlay">
             <div className="sobre-stat">

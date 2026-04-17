@@ -72,7 +72,7 @@
   font-family: 'Inter', sans-serif;
   transition: all 0.3s ease;
   padding: 0.8rem 0;
-  position: relative; /* ← Adicione isso */
+  position: relative;
 }
 
 .filtro-btn:hover {
@@ -128,31 +128,18 @@
 .projeto-imagem {
   width: 100%;
   height: 100%;
+}
+
+.projeto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
   transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Gradientes das imagens */
-.gradient-brown {
-  background: linear-gradient(135deg, var(--brown-primary) 0%, var(--brown-medium) 50%, var(--beige-dark) 100%);
-}
-
-.gradient-green {
-  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-medium) 100%);
-}
-
-.gradient-brown-dark {
-  background: linear-gradient(135deg, var(--dark-warm) 0%, var(--brown-primary) 100%);
-}
-
-.gradient-green-light {
-  background: linear-gradient(135deg, var(--green-medium) 0%, var(--green-light) 100%);
-}
-
-.gradient-beige {
-  background: linear-gradient(135deg, var(--brown-medium) 0%, var(--beige-dark) 100%);
-}
-
-.projeto-card:hover .projeto-imagem {
+.projeto-card:hover .projeto-imagem img {
   transform: scale(1.06);
 }
 
@@ -247,74 +234,74 @@
 
 @media (max-width: 1600px) {
   .portfolio-page-hero {
-    padding: 110px 6% 70px;
+    min-height: 45vh;
   }
-  
+
   .portfolio-page-hero-container {
     max-width: 900px;
   }
-  
+
   .portfolio-hero-label {
     font-size: 0.6rem;
     letter-spacing: 3.5px;
     margin-bottom: 2.5rem;
   }
-  
+
   .portfolio-page-hero h1 {
     font-size: 4.2rem;
     margin-bottom: 2.5rem;
   }
-  
+
   .portfolio-hero-subtitle {
     font-size: 1rem;
     line-height: 1.9;
   }
-  
+
   .filtros-portfolio {
     padding: 3rem 6%;
   }
-  
+
   .filtros-container {
     gap: 2.5rem;
   }
-  
+
   .filtro-btn {
     font-size: 0.65rem;
     letter-spacing: 1.8px;
   }
-  
+
   .projetos-grid-section {
     padding: 6rem 6%;
   }
-  
+
   .projetos-container {
     max-width: 1200px;
   }
-  
+
   .projetos-grid {
     gap: 2rem;
   }
-  
+
   .projeto-card {
     height: 420px;
   }
-  
+
   .projeto-info h3 {
     font-size: 1.6rem;
   }
-  
+
   .projeto-info p {
     font-size: 0.65rem;
   }
-  
+
   .cta-portfolio {
     padding: 6rem 6%;
   }
-  
+
   .cta-portfolio-container h2 {
     font-size: 3.5rem;
   }
-  
+
   .cta-portfolio-container p {
     font-size: 1rem;
   }
@@ -322,17 +309,21 @@
 
 @media (max-width: 1440px) {
   .portfolio-page-hero {
-    padding: 100px 6% 60px;
+    min-height: 45vh;
   }
-  
+
   .portfolio-page-hero h1 {
     font-size: 3.8rem;
   }
-  
+
+  .projetos-container {
+    max-width: 1200px;
+  }
+
   .projetos-grid-section {
     padding: 5.5rem 6%;
   }
-  
+
   .projeto-card {
     height: 400px;
   }
@@ -342,51 +333,50 @@
   .projetos-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .projeto-card {
-    height: 450px;
+    height: 400px;
   }
 }
 
 @media (max-width: 768px) {
   .portfolio-page-hero {
-    padding: 120px 5% 60px;
+    min-height: 40vh;
   }
-  
+
   .portfolio-page-hero h1 {
     font-size: 3rem;
   }
-  
+
   .filtros-portfolio {
     padding: 2.5rem 5%;
   }
-  
+
   .filtros-container {
     gap: 1.5rem;
   }
-  
+
   .filtro-btn.ativo {
-  background: var(--green-medium);
-  color: var(--beige-light);
-  border-color: var(--green-medium);
-}
-  
-  .projetos-grid-section {
-    padding: 6rem 5%;
+    color: var(--beige-light);
+    border-color: var(--green-medium);
   }
-  
+
+  .projetos-grid-section {
+    padding: 5rem 5%;
+  }
+
   .projetos-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .projeto-card {
-    height: 500px;
+    height: 400px;
   }
-  
+
   .cta-portfolio {
     padding: 6rem 5%;
   }
-  
+
   .cta-portfolio-container h2 {
     font-size: 2.5rem;
   }

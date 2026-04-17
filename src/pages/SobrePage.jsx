@@ -1,4 +1,5 @@
 import './SobrePage.css'
+import fabricaVideo from '../assets/images/fabrica/video.mp4'
 
 function SobrePage() {
   return (
@@ -18,7 +19,18 @@ function SobrePage() {
               que transformam vidas.
             </p>
           </div>
-          <div className="sobre-hero-image"></div>
+          <div className="sobre-hero-visual">
+            <div className="sobre-hero-image">
+              <video
+                src={fabricaVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -35,7 +47,6 @@ function SobrePage() {
 
         <div className="storytelling-container">
           
-          {/* Bloco 1 - O Sonho */}
           <div className="story-block">
             <div className="story-number">01</div>
             <h3>O Sonho</h3>
@@ -53,7 +64,6 @@ function SobrePage() {
             </p>
           </div>
 
-          {/* Bloco 2 - O Crescimento */}
           <div className="story-block">
             <div className="story-number">02</div>
             <h3>O Crescimento</h3>
@@ -70,7 +80,6 @@ function SobrePage() {
             </p>
           </div>
 
-          {/* Bloco 3 - Hoje */}
           <div className="story-block">
             <div className="story-number">03</div>
             <h3>Hoje</h3>
@@ -135,23 +144,31 @@ function SobrePage() {
           <div className="processo-grid">
             <div className="processo-item-sobre">
               <div className="processo-numero">01</div>
-              <h3>Consultoria Inicial</h3>
-              <p>Reunião detalhada para compreender suas necessidades, estilo e expectativas. Visitamos o local e fazemos todas as medições necessárias.</p>
+              <div>
+                <h3>Consultoria Inicial</h3>
+                <p>Reunião detalhada para compreender suas necessidades, estilo e expectativas. Visitamos o local e fazemos todas as medições necessárias.</p>
+              </div>
             </div>
             <div className="processo-item-sobre">
               <div className="processo-numero">02</div>
-              <h3>Projeto 3D</h3>
-              <p>Desenvolvemos renderizações fotorrealistas e plantas técnicas detalhadas, permitindo visualizar cada detalhe antes da produção.</p>
+              <div>
+                <h3>Projeto 3D</h3>
+                <p>Desenvolvemos renderizações fotorrealistas e plantas técnicas detalhadas, permitindo visualizar cada detalhe antes da produção.</p>
+              </div>
             </div>
             <div className="processo-item-sobre">
               <div className="processo-numero">03</div>
-              <h3>Produção Premium</h3>
-              <p>Fabricação com materiais selecionados e tecnologia de ponta. Cada peça passa por rigoroso controle de qualidade.</p>
+              <div>
+                <h3>Produção Premium</h3>
+                <p>Fabricação com materiais selecionados e tecnologia de ponta. Cada peça passa por rigoroso controle de qualidade.</p>
+              </div>
             </div>
             <div className="processo-item-sobre">
               <div className="processo-numero">04</div>
-              <h3>Montagem</h3>
-              <p>Equipe especializada realiza a montagem com precisão milimétrica. Entregando seu projeto pronto para uso.</p>
+              <div>
+                <h3>Montagem</h3>
+                <p>Equipe especializada realiza a montagem com precisão milimétrica. Entregando seu projeto pronto para uso.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -169,8 +186,8 @@ function SobrePage() {
             <p>Projetos Realizados</p>
           </div>
           <div className="numero-item-sobre">
-            <h3 className="number">98%</h3>
-            <p>Satisfação</p>
+            <h3 className="number">6.000m²</h3>
+            <p>De estrutura própria</p>
           </div>
         </div>
       </section>

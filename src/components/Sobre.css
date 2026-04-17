@@ -1,6 +1,6 @@
 .sobre {
-  padding: 15rem 7%;
-  background: var(--beige-medium);
+  padding: 5rem 7%;
+  background: var(--beige-light);
 }
 
 .sobre-container {
@@ -18,25 +18,57 @@
   height: 700px;
 }
 
+.sobre-images::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  background: var(--green-medium);
+  border: 1px solid rgba(125, 139, 111, 0.25);
+  z-index: 0;
+}
+
 .sobre-image-main {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-medium) 100%);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   border: 1px solid rgba(74, 84, 64, 0.3);
+}
+
+.sobre-image-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.sobre-image-main::before {
+  content: '';
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(212, 196, 181, 0.15);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .sobre-image-overlay {
   position: absolute;
   bottom: 50px;
-  right: -50px;
+  right: -90px;
   width: 350px;
   height: 250px;
   background: var(--beige-light);
-  border: 1px solid var(--beige-dark);
+  border: 1px solid var(--green-medium);
   padding: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 3;
 }
 
 .sobre-stat {
@@ -49,9 +81,10 @@
 
 .sobre-stat h4 {
   font-size: 3rem;
-  color: var(--brown-medium);
-  margin-bottom: 0.5rem;
+  color: var(--green-medium);
+  margin-bottom: -12px;
   font-weight: 300;
+  margin-top: -40px;
 }
 
 .sobre-stat p {
@@ -59,6 +92,7 @@
   letter-spacing: 2px;
   color: var(--gray-medium);
   text-transform: uppercase;
+  margin-top: 5px;
 }
 
 /* Lado Direito - Texto */
@@ -71,15 +105,13 @@
   letter-spacing: 5px;
   color: var(--brown-medium);
   text-transform: uppercase;
-  margin-bottom: 3rem;
   font-weight: 400;
 }
 
 .sobre-content h2 {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   line-height: 1.15;
   color: var(--dark-primary);
-  margin-bottom: 3rem;
   letter-spacing: -2px;
 }
 
@@ -91,7 +123,7 @@
 }
 
 .sobre-content p {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 2.1;
   color: var(--gray-dark);
   margin-bottom: 2.5rem;
@@ -108,84 +140,93 @@
   .sobre {
     padding: 6rem 6%;
   }
-  
+
   .sobre-container {
     gap: 3.5rem;
     max-width: 1200px;
   }
-  
+
+  .sobre-stat h4 {
+    font-size: 3rem;
+    color: var(--brown-medium);
+    margin-bottom: 18px;
+    font-weight: 300;
+    margin-top: -10px;
+  }
+
   .sobre-label {
     font-size: 0.55rem;
     letter-spacing: 3px;
     margin-bottom: 1.8rem;
   }
-  
+
   .sobre-content h2 {
     font-size: 2.4rem;
     margin-bottom: 1.8rem;
   }
-  
+
   .sobre-divider {
     width: 55px;
     margin-bottom: 1.8rem;
   }
-  
+
   .sobre-content p {
     font-size: 0.85rem;
     line-height: 1.75;
     margin-bottom: 1.1rem;
   }
-  
+
   .sobre-images {
     height: 450px;
   }
-  
-.sobre-image-overlay {
-  position: absolute;
-  bottom: 40px;
-  right: -40px;
-  width: 300px;
-  height: 200px;  /* ← Aumentei de 240px para 280px */
-  background: var(--beige-light);
-  border: 1px solid rgba(125, 139, 111, 0.2);
-  padding: 2.0rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.50rem;
-  z-index: 2;
-}
 
-.sobre-stat {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.5rem;
-  font-weight: 300;
-  color: var(--brown-primary);
-  margin-bottom: 0.2rem;
-  line-height: 1;
-}
+  .sobre-image-overlay {
+    position: absolute;
+    bottom: 30px;
+    right: -40px;
+    width: 300px;
+    height: 200px;
+    background: var(--green-medium);
+    border: 1px solid rgba(125, 139, 111, 0.2);
+    padding: 2.0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.50rem;
+    z-index: 2;
+  }
 
-.sobre-stat-label {
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--gray-medium);
-  font-weight: 300;
-  line-height: 1.4;  /* ← Adicionei line-height */
+  .sobre-stat {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--brown-primary);
+    margin-bottom: 0.2rem;
+    line-height: 1;
+  }
+
+  .sobre-stat-label {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray-medium);
+    font-weight: 300;
+    line-height: 1.4;
+  }
 }
 
 @media (max-width: 1440px) {
   .sobre {
     padding: 5.5rem 6%;
   }
-  
+
   .sobre-content h2 {
     font-size: 2.2rem;
   }
-  
+
   .sobre-images {
     height: 420px;
   }
-  
+
   .sobre-image-overlay {
     width: 240px;
     height: 160px;
@@ -197,33 +238,46 @@
     grid-template-columns: 1fr;
     gap: 4rem;
   }
-  
+
+  .sobre-image-overlay {
+    position: absolute;
+    bottom: -80px;
+    right: 40px;
+    width: 350px;
+    height: 250px;
+    background: var(--beige-light);
+    border: 1px solid var(--beige-dark);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .sobre-images {
     height: 450px;
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .sobre {
     padding: 6rem 5%;
   }
-  
+
   .sobre-content h2 {
     font-size: 2.5rem;
   }
-  
+
   .sobre-content p {
     font-size: 0.95rem;
   }
-  
+
   .sobre-images {
     height: 500px;
   }
-  
+
   .sobre-image-overlay {
     width: 280px;
     height: 200px;
     right: -30px;
   }
-  }
-  }
+}
