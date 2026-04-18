@@ -97,7 +97,7 @@ function PortfolioPage() {
         <div className="cta-portfolio-container">
           <h2>Pronto para Transformar<br />Seu Espaço?</h2>
           <p>Agende uma consultoria gratuita e descubra como podemos criar o ambiente dos seus sonhos.</p>
-          <a href="#contato" className="cta-button-portfolio">Solicitar Orçamento</a>
+          <Link to="/contato" className="cta-button-portfolio">Solicitar Orçamento</Link>
         </div>
       </section>
 

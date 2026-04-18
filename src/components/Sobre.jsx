@@ -18,8 +18,8 @@ function Sobre() {
               <p>Projetos Realizados</p>
             </div>
             <div className="sobre-stat">
-              <h4 className="number">98%</h4>
-              <p>Clientes Satisfeitos</p>
+              <h4 className="number">6.000m²</h4>
+              <p>De estrutura própria</p>
             </div>
           </div>
         </div>

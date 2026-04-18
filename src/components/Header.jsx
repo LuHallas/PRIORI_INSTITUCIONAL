@@ -61,15 +61,12 @@ function Header() {
           <li><Link to="/portfolio" onClick={handleLinkClick}>Portfólio</Link></li>
           <li><button onClick={() => handleScrollToSection('lojas')} className="nav-link-btn">Lojas</button></li>
           <li><button onClick={() => handleScrollToSection('parceiros')} className="nav-link-btn">Parceiros</button></li>
-          <li><button onClick={() => handleScrollToSection('contato')} className="nav-link-btn">Contato</button></li>
+          <li><Link to="/contato" onClick={handleLinkClick}>Contato</Link></li>
         </ul>
         
-        <button 
-          onClick={() => handleScrollToSection('contato')} 
-          className="nav-cta nav-cta-desktop"
-        >
+        <Link to="/contato" className="nav-cta nav-cta-desktop">
           Orçamento
-        </button>
+        </Link>
       </nav>
 
       {/* Overlay quando menu aberto */}

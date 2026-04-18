@@ -1,5 +1,6 @@
 import './SobrePage.css'
 import fabricaVideo from '../assets/images/fabrica/video.mp4'
+import { Link } from 'react-router-dom'
 
 function SobrePage() {
   return (
@@ -197,7 +198,7 @@ function SobrePage() {
         <div className="cta-sobre-container">
           <h2>Pronto para Começar?</h2>
           <p>Transforme seus ambientes com a expertise de quem entende verdadeiramente de design e qualidade.</p>
-          <a href="#contato" className="cta-button-sobre">Solicitar Orçamento</a>
+          <Link to="/contato" className="cta-button-sobre">Solicitar Orçamento</Link>
         </div>
       </section>
 

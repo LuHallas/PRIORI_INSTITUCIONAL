@@ -1,0 +1,287 @@
+.contato-page {
+  min-height: 100vh;
+}
+
+/* Hero */
+.contato-page-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 180px 7% 100px;
+  background: linear-gradient(135deg, var(--dark-primary) 0%, var(--dark-warm) 100%);
+  text-align: center;
+}
+
+.contato-page-hero-container {
+  max-width: 900px;
+}
+
+.contato-hero-label {
+  font-size: 0.7rem;
+  letter-spacing: 5px;
+  color: var(--green-medium);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+.contato-page-hero h1 {
+  font-size: 6rem;
+  line-height: 1.05;
+  color: var(--beige-light);
+  margin-bottom: 3rem;
+  letter-spacing: -3px;
+}
+
+.contato-hero-subtitle {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--beige-dark);
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Conteúdo */
+.contato-page-content {
+  padding: 10rem 7%;
+  background: var(--beige-medium);
+}
+
+.contato-page-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 10rem;
+  align-items: flex-start;
+}
+
+/* Informações */
+.contato-info {
+  padding-top: 2rem;
+}
+
+.contato-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contato-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--beige-dark);
+}
+
+.contato-detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: var(--brown-medium);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.detail-value {
+  font-size: 1.1rem;
+  color: var(--dark-primary);
+  line-height: 1.7;
+}
+
+/* Formulário */
+.contato-form {
+  background: var(--beige-light);
+  border: 1px solid var(--beige-dark);
+  padding: 5rem;
+}
+
+.form-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group label {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: var(--gray-medium);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 1.3rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--beige-dark);
+  color: var(--dark-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: all 0.4s ease;
+  font-weight: 300;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-bottom-color: var(--green-medium);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+  font-family: 'Inter', sans-serif;
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%237D8B6F' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  padding-right: 20px;
+}
+
+.form-group select option {
+  background: var(--beige-light);
+  color: var(--dark-primary);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.submit-button {
+  padding: 1.6rem 4rem;
+  background-color: var(--green-dark);
+  color: var(--beige-light);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 400;
+  transition: all 0.6s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.submit-button:hover {
+  background-color: var(--green-medium);
+  transform: translateY(-4px);
+  box-shadow: 0 25px 60px rgba(125, 139, 111, 0.3);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-button-whatsapp {
+  padding: 1.6rem 4rem;
+  background-color: var(--dark-primary);
+  color: var(--beige-light);
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 400;
+  transition: all 0.6s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.submit-button-whatsapp:hover {
+  background-color: var(--dark-warm);
+  transform: translateY(-4px);
+  box-shadow: 0 25px 60px rgba(26, 18, 16, 0.3);
+}
+
+.status-message {
+  padding: 1.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.status-message.success {
+  background-color: rgba(37, 211, 102, 0.1);
+  border: 1px solid #25D366;
+  color: #128C7E;
+}
+
+.status-message.error {
+  background-color: rgba(220, 53, 69, 0.1);
+  border: 1px solid #dc3545;
+  color: #c82333;
+}
+
+/* ============= RESPONSIVIDADE ============= */
+
+@media (max-width: 1600px) {
+  .contato-page-hero { min-height: 40vh; }
+  .contato-page-hero h1 { font-size: 4rem; }
+  .contato-hero-label { font-size: 0.6rem; letter-spacing: 3.5px; margin-bottom: 2.5rem; }
+  .contato-hero-subtitle { font-size: 1rem; }
+  .contato-page-content { padding: 7rem 6%; }
+  .contato-page-container { max-width: 1200px; gap: 6rem; }
+  .detail-label { font-size: 0.6rem; }
+  .detail-value { font-size: 0.95rem; }
+  .contato-form { padding: 3.5rem; }
+  .form-group label { font-size: 0.6rem; }
+  .submit-button, .submit-button-whatsapp { padding: 1.4rem 3.5rem; font-size: 0.65rem; }
+}
+
+@media (max-width: 1440px) {
+  .contato-page-hero h1 { font-size: 3.5rem; }
+  .contato-page-content { padding: 6rem 6%; }
+  .contato-page-container { gap: 5rem; }
+  .contato-form { padding: 3rem; }
+}
+
+@media (max-width: 1024px) {
+  .contato-page-container { grid-template-columns: 1fr; gap: 4rem; }
+  .contato-page-hero h1 { font-size: 3rem; }
+  .form-row { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+@media (max-width: 768px) {
+  .contato-page-hero { padding: 140px 5% 80px; }
+  .contato-page-hero h1 { font-size: 2.5rem; }
+  .contato-page-content { padding: 5rem 5%; }
+  .contato-detail-item { padding-bottom: 1.5rem; }
+  .contato-form { padding: 2.5rem; }
+  .form-grid { gap: 2rem; }
+  .form-buttons { flex-direction: column; gap: 1rem; }
+  .submit-button, .submit-button-whatsapp { width: 100%; padding: 1.4rem 2rem; }
+}
+
+@media (max-width: 480px) {
+  .contato-page-hero h1 { font-size: 2rem; letter-spacing: -1px; }
+  .contato-page-content { padding: 4rem 4%; }
+  .contato-form { padding: 2rem; }
+  .submit-button, .submit-button-whatsapp { font-size: 0.6rem; padding: 1.2rem 1.5rem; }
+}

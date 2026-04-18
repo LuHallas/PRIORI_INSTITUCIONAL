@@ -67,9 +67,9 @@ function Footer() {
           <div className="footer-section">
             <h4>Contato</h4>
             <ul>
-              <li><a href="tel:+5555997324370">(55) 99732-4370</a></li>
-              <li><a href="mailto:luciane.hallas08@gmail.com">luciane.hallas08@gmail.com</a></li>
-              <li><button onClick={() => handleScrollToSection('contato')} className="footer-link-btn">Solicitar Orçamento</button></li>
+              <li><a href="tel:+5511943948448">(11) 94394-8448</a></li>
+              <li><a href="mailto: contato@priori.ind.br">contato@priori.ind.br</a></li>
+              <li><Link to="/contato">Solicitar Orçamento</Link></li>
             </ul>
           </div>
 

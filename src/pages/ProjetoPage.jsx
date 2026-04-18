@@ -1,4 +1,4 @@
-import { useParams, useLocation } from 'react-router-dom'
+import { useParams, useLocation, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import './ProjetoPage.css'
 import { galeriaImagens } from '../data/galeriaImagens'
@@ -31,6 +31,7 @@ const dadosProjetos = {
 function ProjetoPage() {
   const { slug } = useParams()
   const location = useLocation()
+  const navigate = useNavigate()
   const [indiceAtivo, setIndiceAtivo] = useState(0)
 
   const projeto = dadosProjetos[slug] || dadosProjetos['cozinha-gourmet-jardins']
@@ -39,6 +40,14 @@ function ProjetoPage() {
 
   const anterior = () => setIndiceAtivo(i => (i === 0 ? galeria.length - 1 : i - 1))
   const proximo = () => setIndiceAtivo(i => (i === galeria.length - 1 ? 0 : i + 1))
+
+  const irParaContato = () => {
+    navigate('/')
+    setTimeout(() => {
+      const contato = document.getElementById('contato')
+      if (contato) contato.scrollIntoView({ behavior: 'smooth' })
+    }, 300)
+  }
 
   return (
     <div className="projeto-page">
@@ -107,7 +116,7 @@ function ProjetoPage() {
         <div className="projeto-cta-container">
           <h2>Gostou deste Projeto?</h2>
           <p>Entre em contato e vamos criar algo incrível para você também.</p>
-          <a href="#contato" className="cta-button-projeto">Solicitar Orçamento</a>
+          <a href="/contato" className="cta-button-projeto">Solicitar Orçamento</a>
         </div>
       </section>
 

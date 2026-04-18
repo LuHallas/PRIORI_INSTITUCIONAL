@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import SobrePage from './pages/SobrePage'
 import PortfolioPage from './pages/PortfolioPage'
 import ProjetoPage from './pages/ProjetoPage'
+import ContatoPage from './pages/ContatoPage'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/sobre" element={<SobrePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/portfolio/:slug" element={<ProjetoPage />} />
+        <Route path="/contato" element={<ContatoPage />} />
       </Routes>
       <Footer />
     </div>
