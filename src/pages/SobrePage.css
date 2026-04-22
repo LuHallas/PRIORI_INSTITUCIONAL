@@ -76,8 +76,8 @@
 
 .sobre-hero-image {
   width: 100%;
-  aspect-ratio: 16 / 9;
   position: relative;
+  padding-top: 56.25%;
   overflow: hidden;
   z-index: 1;
 }
@@ -89,6 +89,16 @@
   border: 1px solid rgba(212, 196, 181, 0.12);
   z-index: 2;
   pointer-events: none;
+}
+
+.sobre-hero-image iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
 }
 
 .sobre-hero-image video {

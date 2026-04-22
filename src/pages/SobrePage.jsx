@@ -1,5 +1,4 @@
 import './SobrePage.css'
-import fabricaVideo from '../assets/images/fabrica/video.mp4'
 import { Link } from 'react-router-dom'
 
 function SobrePage() {
@@ -20,18 +19,22 @@ function SobrePage() {
               que transformam vidas.
             </p>
           </div>
+
           <div className="sobre-hero-visual">
             <div className="sobre-hero-image">
-              <video
-                src={fabricaVideo}
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls
-              />
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/-BnyqYpfHkA?si=IiLwhlBdLvb0QSMR&autoplay=1&mute=1&loop=1&playlist=-BnyqYpfHkA&controls=1"
+                title="Fábrica Priori"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
+
         </div>
       </section>
 
