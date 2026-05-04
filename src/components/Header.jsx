@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import logoImg from '../assets/logo.svg'
 import './Header.css'
 
 function Header() {
