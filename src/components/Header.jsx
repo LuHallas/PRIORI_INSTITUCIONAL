@@ -40,7 +40,7 @@ function Header() {
     <header className="header">
       <nav className="nav">
         <Link to="/" onClick={handleHomeClick} className="logo">
-          <img src="/src/assets/logo.svg" alt="Priori Mobiliário Exclusivo" className="logo-img" />
+          <img src={logoImg} alt="Priori Mobiliário Exclusivo" className="logo-img" />
         </Link>
         
         {/* Menu Hamburger */}
