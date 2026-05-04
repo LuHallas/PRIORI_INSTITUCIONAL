@@ -17,29 +17,29 @@ function Parceiros() {
           {/* Linha 1 - 3 itens */}
           <div className="parceiros-linha-1">
             <div className="parceiro-item">
-              <span className="parceiro-name">ZEN</span>
+              <img src="/src/assets/parceiros_logo/parceiro_zem.png" alt="ZEM" className="parceiro-logo" />
             </div>
             <div className="parceiro-item">
-              <span className="parceiro-name">HARDT</span>
+              <img src="/src/assets/parceiros_logo/parceiro_hardt.png" alt="Hardt" className="parceiro-logo" />
             </div>
             <div className="parceiro-item">
-              <span className="parceiro-name">REHAU</span>
+              <img src="/src/assets/parceiros_logo/parceiro_rehau.png" alt="Rehau" className="parceiro-logo" />
             </div>
           </div>
 
           {/* Linha 2 - 4 itens */}
           <div className="parceiros-linha-2">
             <div className="parceiro-item">
-              <span className="parceiro-name">HÄFELE</span>
+              <img src="/src/assets/parceiros_logo/parceiro_hafele.png" alt="Häfele" className="parceiro-logo" />
             </div>
             <div className="parceiro-item">
-              <span className="parceiro-name">ARAUCO</span>
+              <img src="/src/assets/parceiros_logo/parceiro_arauco.png" alt="Arauco" className="parceiro-logo" />
             </div>
             <div className="parceiro-item">
-              <span className="parceiro-name">JRR DESIGN</span>
+              <img src="/src/assets/parceiros_logo/parceiro_jrr_designer.png" alt="JRR Designer" className="parceiro-logo" />
             </div>
             <div className="parceiro-item">
-              <span className="parceiro-name">ROMETAL</span>
+              <img src="/src/assets/parceiros_logo/parceiro_rometal.png" alt="Rometal" className="parceiro-logo" />
             </div>
           </div>
 

@@ -19,24 +19,15 @@
 }
 
 .logo {
-  font-family: 'Arboria', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 8px;
-  color: var(--beige-light);
-  text-transform: uppercase;
-  text-decoration: none;
   display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+  align-items: center;
   z-index: 1001;
+  text-decoration: none;
 }
 
-.logo-subtitle {
-  font-size: 0.6rem;
-  letter-spacing: 3px;
-  font-weight: 400;
-  color: var(--green-medium);
+.logo-img {
+  height: 48px;
+  width: auto;
 }
 
 /* Menu Desktop */
@@ -163,16 +154,10 @@
     padding: 0.9rem 5%;
   }
   
-  .logo {
-    font-size: 1.7rem;
-    letter-spacing: 12px;
-  }
-  
-  .logo-subtitle {
-    font-size: 0.95rem;
-    letter-spacing: 2.5px;
-  }
-  
+.logo-img { 
+  height: 48px;
+} 
+
   .nav-center {
     gap: 2rem;
   }
@@ -194,15 +179,9 @@
     padding: 0.85rem 4%;
   }
   
-  .logo {
-    font-size: 1.6rem;
-    letter-spacing: 8px;
-  }
-
-  .logo-subtitle {
-    font-size: 0.80rem;
-    letter-spacing: 2px;
-  }
+.logo-img { 
+  height: 46px;
+} 
   
   .nav-center {
     gap: 1.8rem;
@@ -223,6 +202,10 @@
   .hamburger {
     display: flex !important;
   }
+
+  .logo-img { 
+  height: 48px;
+} 
   
   .nav-cta-desktop {
     display: none !important;
@@ -281,30 +264,21 @@
   }
   
   .logo {
-    font-size: 2rem;
-    letter-spacing: 8px;
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  text-decoration: none;
   }
   
-  .logo-subtitle {
-    font-size: 1rem;
-    letter-spacing: 1.8px;
+  .logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
   }
   
   .nav-center {
     width: 280px;
     padding: 3rem 2rem;
     gap: 1.8rem;
-  }
-}
-
-@media (max-width: 768px){
-  .logo {
-    font-size: 1.2rem;
-    letter-spacing: 9px;
-  }
-  
-  .logo-subtitle {
-    font-size: 0.7rem;
-    letter-spacing: 1.8px;
   }
 }

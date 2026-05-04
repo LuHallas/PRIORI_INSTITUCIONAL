@@ -66,6 +66,7 @@
   transition: all 0.6s ease;
   position: relative;
   overflow: hidden;
+  padding: 2rem;
 }
 
 .parceiro-item::before {
@@ -86,15 +87,20 @@
   opacity: 1;
 }
 
-.parceiro-name {
-  font-family: 'Arboria', sans-serif;
-  font-size: 1.3rem;
-  color: var(--green-light);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: 300;
+.parceiro-logo {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  transition: opacity 0.6s ease;
   z-index: 1;
-  text-align: center;
+}
+
+.parceiro-item:hover .parceiro-logo {
+  opacity: 1;
 }
 
 /* ============= RESPONSIVIDADE PARCEIROS ============= */
@@ -133,11 +139,6 @@
     height: 170px;
     width: 220px;
   }
-  
-  .parceiro-name {
-    font-size: 1.2rem;
-    letter-spacing: 2.5px;
-  }
 }
 
 @media (max-width: 1440px) {
@@ -156,10 +157,6 @@
   .parceiro-item {
     height: 160px;
     width: 200px;
-  }
-  
-  .parceiro-name {
-    font-size: 1.1rem;
   }
 }
 
@@ -217,10 +214,6 @@
     flex-shrink: 0;
     scroll-snap-align: start;
   }
-  
-  .parceiro-name {
-    font-size: 1.1rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -246,7 +239,6 @@
     padding: 0;
   }
   
-  /* Carrossel único */
   .parceiros-grid {
     display: flex;
     flex-direction: row;
@@ -274,7 +266,6 @@
     border-radius: 10px;
   }
   
-  /* Ocultar as linhas originais */
   .parceiros-linha-1,
   .parceiros-linha-2 {
     display: contents;
@@ -286,11 +277,6 @@
     height: 160px;
     flex-shrink: 0;
     scroll-snap-align: start;
-  }
-  
-  .parceiro-name {
-    font-size: 1rem;
-    letter-spacing: 2px;
   }
 }
 
@@ -317,7 +303,6 @@
     padding: 0;
   }
   
-  /* Carrossel único */
   .parceiros-grid {
     display: flex;
     flex-direction: row;
@@ -345,7 +330,6 @@
     border-radius: 10px;
   }
   
-  /* Ocultar as linhas originais */
   .parceiros-linha-1,
   .parceiros-linha-2 {
     display: contents;
@@ -356,10 +340,5 @@
     height: 140px;
     flex-shrink: 0;
     scroll-snap-align: start;
-  }
-  
-  .parceiro-name {
-    font-size: 0.85rem;
-    letter-spacing: 1.5px;
   }
 }

@@ -25,7 +25,7 @@ function SobrePage() {
               <iframe
                 width="100%"
                 height="100%"
-                src="https://www.youtube.com/embed/-BnyqYpfHkA?si=IiLwhlBdLvb0QSMR&autoplay=1&mute=1&loop=1&playlist=-BnyqYpfHkA&controls=1"
+                src="https://www.youtube.com/embed/-BnyqYpfHkA?si=I44vCOw8fcb-c9VT&autoplay=1&mute=1&loop=1&playlist=-BnyqYpfHkA&controls=1"
                 title="Fábrica Priori"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
