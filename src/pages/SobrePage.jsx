@@ -90,11 +90,11 @@ function SobrePage() {
             <p>
               Hoje, a empresa conta com parque fabril de mais de 6.000m², equipado 
               com maquinário industrial de ponta. Ainda assim, nunca abrimos mão 
-              daquilo que consideramos nosso verdadeiro DNA: o olhar humano e o 
+              daquilo que consideramos nosso verdadeiro DNA: O olhar humano e o 
               acabamento artesanal.
             </p>
             <p>
-              Mais de 2.000 projetos entregues, sempre com foco em excelência, 
+              Mais de 4.500 ambeintes transformados, sempre com foco em excelência, 
               durabilidade e satisfação do cliente. E a história continua evoluindo 
               com a inauguração da nossa primeira loja na Avenida Pompéia, São Paulo.
             </p>
@@ -182,12 +182,12 @@ function SobrePage() {
       <section className="numeros-sobre">
         <div className="numeros-sobre-container">
           <div className="numero-item-sobre">
-            <h3 className="number">6+</h3>
-            <p>Anos de Mercado</p>
+            <h3 className="number">1.000+</h3>
+            <p>Projetos Entregues</p>
           </div>
           <div className="numero-item-sobre">
-            <h3 className="number">2.000+</h3>
-            <p>Projetos Realizados</p>
+            <h3 className="number">4.500+</h3>
+            <p>Ambientes Transformados</p>
           </div>
           <div className="numero-item-sobre">
             <h3 className="number">6.000m²</h3>

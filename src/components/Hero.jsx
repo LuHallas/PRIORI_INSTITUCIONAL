@@ -35,7 +35,7 @@ function Hero() {
                     </div>
 
                     <div className="hero-floating-card">
-                        <h3 className="number">2.000+</h3>
+                        <h3 className="number">1.000+</h3>
                         <p>Projetos Realizados</p>
                     </div>
                 </div>

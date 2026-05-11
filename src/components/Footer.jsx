@@ -1,5 +1,6 @@
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import './Footer.css'
+import logo from '../assets/logo.svg' // Importe a logo
 
 function Footer() {
   const navigate = useNavigate()
@@ -31,7 +32,7 @@ function Footer() {
           
           {/* Coluna 1 - Marca */}
           <div className="footer-brand">
-            <h3>PRIORI</h3>
+            <img src={logo} alt="Priori" className="footer-logo" />
             <p>
               Móveis sob medida de alto padrão. Desde 2006, transformando 
               ambientes em verdadeiras obras de arte através do design 
@@ -51,24 +52,24 @@ function Footer() {
             </ul>
           </div>
 
-{/* Coluna 3 - Ambientes */}
-<div className="footer-section">
-  <h4>Ambientes</h4>
-  <ul>
-    <li><Link to="/portfolio" state={{ filtro: 'COZINHAS' }}>Cozinhas</Link></li>
-    <li><Link to="/portfolio" state={{ filtro: 'CLOSETS' }}>Closets</Link></li>
-    <li><Link to="/portfolio" state={{ filtro: 'DORMITÓRIOS' }}>Dormitórios</Link></li>
-    <li><Link to="/portfolio" state={{ filtro: 'HOME OFFICE' }}>Home Office</Link></li>
-    <li><Link to="/portfolio" state={{ filtro: 'SALAS' }}>Salas</Link></li>
-  </ul>
-</div>
+          {/* Coluna 3 - Ambientes */}
+          <div className="footer-section">
+            <h4>Ambientes</h4>
+            <ul>
+              <li><Link to="/portfolio" state={{ filtro: 'COZINHAS' }}>Cozinhas</Link></li>
+              <li><Link to="/portfolio" state={{ filtro: 'CLOSETS' }}>Closets</Link></li>
+              <li><Link to="/portfolio" state={{ filtro: 'DORMITÓRIOS' }}>Dormitórios</Link></li>
+              <li><Link to="/portfolio" state={{ filtro: 'HOME OFFICE' }}>Home Office</Link></li>
+              <li><Link to="/portfolio" state={{ filtro: 'SALAS' }}>Salas</Link></li>
+            </ul>
+          </div>
 
           {/* Coluna 4 - Contato */}
           <div className="footer-section">
             <h4>Contato</h4>
             <ul>
               <li><a href="tel:+5511943948448">(11) 94394-8448</a></li>
-              <li><a href="mailto: contato@priori.ind.br">contato@priori.ind.br</a></li>
+              <li><a href="mailto:contato@priori.ind.br">contato@priori.ind.br</a></li>
               <li><Link to="/contato">Solicitar Orçamento</Link></li>
             </ul>
           </div>

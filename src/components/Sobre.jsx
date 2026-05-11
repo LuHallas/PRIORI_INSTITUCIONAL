@@ -14,8 +14,8 @@ function Sobre() {
           
           <div className="sobre-image-overlay">
             <div className="sobre-stat">
-              <h4 className="number">2.000+</h4>
-              <p>Projetos Realizados</p>
+              <h4 className="number">4.500+</h4>
+              <p>Ambientes Transformados</p>
             </div>
             <div className="sobre-stat">
               <h4 className="number">6.000m²</h4>
@@ -43,7 +43,7 @@ function Sobre() {
           </p>
           
           <p>
-            Mais de 2.000 projetos nos ensinaram que o verdadeiro luxo está em criar 
+            Mais de 1.000 projetos nos ensinaram que o verdadeiro luxo está em criar 
             espaços que refletem quem você é. Porque um lar bem planejado não apenas 
             acomoda, ele inspira.
           </p>

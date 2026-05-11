@@ -82,7 +82,7 @@
 .sobre-stat h4 {
   font-size: 3rem;
   color: var(--green-medium);
-  margin-bottom: -12px;
+  margin-bottom: -9px;
   font-weight: 300;
   margin-top: -40px;
 }
@@ -148,7 +148,7 @@
 
   .sobre-stat h4 {
     font-size: 3rem;
-    color: var(--brown-medium);
+    color: var(--green-medium);
     margin-bottom: 18px;
     font-weight: 300;
     margin-top: -10px;
@@ -199,7 +199,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.5rem;
     font-weight: 300;
-    color: var(--brown-primary);
+    color: var(--green-medium);
     margin-bottom: 0.2rem;
     line-height: 1;
   }
@@ -246,7 +246,7 @@
     width: 350px;
     height: 250px;
     background: var(--beige-light);
-    border: 1px solid var(--beige-dark);
+    border: 1px solid var(--green-medium);
     padding: 3rem;
     display: flex;
     flex-direction: column;

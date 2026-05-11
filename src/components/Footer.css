@@ -33,6 +33,16 @@
   margin-top: 2rem;
 }
 
+/* Logo no Footer */
+.footer-logo {
+  height: 50px;
+  width: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  filter: brightness(0) invert(1); /* Deixa a logo branca (se necessário) */
+  opacity: 0.9;
+}
+
 .footer-brand p {
   font-size: 0.95rem;
   line-height: 2;
@@ -122,6 +132,11 @@
   .footer {
     padding: 6rem 6% 3rem;
   }
+
+  .footer-logo {
+    height: 45px;
+    margin-bottom: 2.5rem;
+  }
   
   .footer-container {
     max-width: 1400px;
@@ -198,6 +213,10 @@
   .footer {
     padding: 6rem 5% 3rem;
   }
+
+  .footer-logo {
+    height: 40px;
+  }
   
   .footer-main {
     grid-template-columns: 1fr;
@@ -212,5 +231,11 @@
   
   .footer-social {
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    height: 35px;
   }
 }
