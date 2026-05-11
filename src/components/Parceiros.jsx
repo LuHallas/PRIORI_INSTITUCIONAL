@@ -1,4 +1,12 @@
 import './Parceiros.css'
+// Importe as imagens
+import logoZem from '../assets/parceiros_logo/parceiro_zem.png'
+import logoHardt from '../assets/parceiros_logo/parceiro_hardt.png'
+import logoRehau from '../assets/parceiros_logo/parceiro_rehau.png'
+import logoHafele from '../assets/parceiros_logo/parceiro_hafele.png'
+import logoArauco from '../assets/parceiros_logo/parceiro_arauco.png'
+import logoJrr from '../assets/parceiros_logo/parceiro_jrr_designer.png'
+import logoRometal from '../assets/parceiros_logo/parceiro_rometal.png'
 
 function Parceiros() {
   return (
@@ -17,29 +25,29 @@ function Parceiros() {
           {/* Linha 1 - 3 itens */}
           <div className="parceiros-linha-1">
             <div className="parceiro-item">
-              <img src="/src/assets/parceiros_logo/parceiro_zem.png" alt="ZEM" className="parceiro-logo" />
+              <img src={logoZem} alt="ZEM" className="parceiro-logo" />
             </div>
             <div className="parceiro-item">
-              <img src="/src/assets/parceiros_logo/parceiro_hardt.png" alt="Hardt" className="parceiro-logo" />
+              <img src={logoHardt} alt="Hardt" className="parceiro-logo" />
             </div>
             <div className="parceiro-item">
-              <img src="/src/assets/parceiros_logo/parceiro_rehau.png" alt="Rehau" className="parceiro-logo" />
+              <img src={logoRehau} alt="Rehau" className="parceiro-logo" />
             </div>
           </div>
 
           {/* Linha 2 - 4 itens */}
           <div className="parceiros-linha-2">
             <div className="parceiro-item">
-              <img src="/src/assets/parceiros_logo/parceiro_hafele.png" alt="Häfele" className="parceiro-logo" />
+              <img src={logoHafele} alt="Häfele" className="parceiro-logo" />
             </div>
             <div className="parceiro-item">
-              <img src="/src/assets/parceiros_logo/parceiro_arauco.png" alt="Arauco" className="parceiro-logo" />
+              <img src={logoArauco} alt="Arauco" className="parceiro-logo" />
             </div>
             <div className="parceiro-item">
-              <img src="/src/assets/parceiros_logo/parceiro_jrr_designer.png" alt="JRR Designer" className="parceiro-logo" />
+              <img src={logoJrr} alt="JRR Designer" className="parceiro-logo" />
             </div>
             <div className="parceiro-item">
-              <img src="/src/assets/parceiros_logo/parceiro_rometal.png" alt="Rometal" className="parceiro-logo" />
+              <img src={logoRometal} alt="Rometal" className="parceiro-logo" />
             </div>
           </div>
 

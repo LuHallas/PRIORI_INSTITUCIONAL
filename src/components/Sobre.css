@@ -281,3 +281,123 @@
     right: -30px;
   }
 }
+
+/* Adicione/substitua esta media query no final do arquivo */
+
+@media (max-width: 500px) {
+  .sobre {
+    padding: 3rem 5%;
+  }
+
+  .sobre-container {
+    gap: 2rem;
+  }
+
+  /* Ajustar altura da imagem para mobile */
+  .sobre-images {
+    height: 380px;
+    margin-bottom: 3rem; /* Espaço para o card que vai sobrepor */
+  }
+
+  .sobre-images::before {
+    top: 10px;
+    left: -10px;
+  }
+
+  /* Card sobrepondo a imagem - MAIS À DIREITA */
+  .sobre-image-overlay {
+    position: absolute;
+    bottom: -60px;
+    right: 5%; /* Alinha à direita */
+    left: auto; /* Remove o left */
+    width: fit-content;
+    max-width: 85%;
+    height: auto;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid var(--green-medium);
+    background: var(--beige-light);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* Ajustar estatísticas */
+  .sobre-stat {
+    margin-bottom: 0;
+  }
+
+  .sobre-stat h4 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+    line-height: 1;
+  }
+
+  .sobre-stat p {
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  /* Ajustar conteúdo de texto */
+  .sobre-content {
+    padding-left: 0;
+  }
+
+  .sobre-label {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+
+  .sobre-content h2 {
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .sobre-divider {
+    width: 50px;
+    margin: 1.5rem 0;
+  }
+
+  .sobre-content p {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+  }
+}
+
+/* Para telas MUITO pequenas (menos de 380px) */
+@media (max-width: 380px) {
+  .sobre {
+    padding: 2.5rem 4%;
+  }
+
+  .sobre-images {
+    height: 320px;
+    margin-bottom: 2.5rem;
+  }
+
+  .sobre-image-overlay {
+    bottom: -50px;
+    right: 5%;
+    padding: 1rem 1.2rem;
+    gap: 0.6rem;
+  }
+
+  .sobre-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .sobre-stat h4 {
+    font-size: 1.6rem;
+  }
+
+  .sobre-stat p {
+    font-size: 0.55rem;
+  }
+}
